@@ -1,0 +1,116 @@
+:root {
+  --clr-primary: #0a2647;
+  --clr-secondary: #1e444f;
+
+  --clr-accent-1: #f97316;
+  --clr-accent-2: #dddddd;
+}
+
+/* === Global Style === */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+a {
+  color: var(--clr-primary);
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+iconify-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.contact,
+.btn {
+  cursor: pointer;
+}
+
+/* === STYLE === */
+
+.navbar__container {
+  padding: 1.6rem 4.5rem;
+}
+
+.navbar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--clr-accent-2);
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact > p {
+  font-size: 0.85rem;
+  color: var(--clr-primary);
+}
+
+.sosmed {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 1rem;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--clr-primary);
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  font-weight: 300;
+}
+
+.menu li a {
+  color: #999;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.sign_in {
+  background-color: transparent;
+  color: var(--clr-accent-1);
+  border: none;
+  text-decoration: underline;
+}
+
+.sign_up {
+  background-color: var(--clr-accent-1);
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+}
