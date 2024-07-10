@@ -1,6 +1,7 @@
 :root {
   --clr-primary: #0a2647;
   --clr-secondary: #1e444f;
+  --clr-third: #999;
 
   --clr-accent-1: #f97316;
   --clr-accent-2: #dddddd;
@@ -14,7 +15,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
 a {
@@ -113,4 +113,98 @@ iconify-icon {
   border: none;
   border-radius: 2rem;
   color: white;
+}
+
+.hero__content {
+  padding: 1rem 2.8rem 0;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.title {
+  color: var(--clr-primary);
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--clr-third);
+  margin: 1.5rem 0;
+}
+
+.ornament {
+  width: 98%;
+}
+
+.ornament img {
+  border-radius: 2.5rem;
+  width: 100%;
+}
+
+.explore,
+.watch_video {
+  padding: 0.3rem 1rem;
+  border-radius: 2rem;
+}
+
+.explore {
+  border: 1.4px solid var(--clr-primary);
+  background-color: transparent;
+  color: var(--clr-primary);
+}
+
+.watch_video {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background-color: transparent;
+  border: none;
+  color: var(--clr-third);
+}
+
+.watch_video iconify-icon {
+  font-size: 1.6rem;
+  border-radius: 50%;
+  padding: 5px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.13);
+}
+
+.features__container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: white;
+  width: fit-content;
+  border-radius: 3rem;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.13);
+  padding: 1.3rem 2rem;
+  margin-top: -3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.feature_title {
+  font-weight: 500;
+  color: var(--clr-third);
+  margin-bottom: 0.3rem;
+}
+
+.feature_description {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--clr-third);
+}
+
+.feature_item .btn {
+  padding: 0.7rem 1.3rem;
+  border: 1px solid var(--clr-primary);
+  border-radius: 2rem;
+  background-color: transparent;
 }
