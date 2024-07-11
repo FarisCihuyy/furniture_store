@@ -122,12 +122,19 @@ iconify-icon {
 .hero {
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
+  gap: 2rem;
+}
+
+.title__section {
+  flex: 0.9;
+}
+.ornament {
+  flex: 1.1;
 }
 
 .title {
   color: var(--clr-primary);
-  font-size: 3.5rem;
+  font-size: 3.8rem;
   text-transform: capitalize;
 }
 
@@ -138,7 +145,7 @@ iconify-icon {
 }
 
 .ornament {
-  width: 98%;
+  width: 100%;
 }
 
 .ornament img {
@@ -188,6 +195,20 @@ iconify-icon {
   z-index: 1;
 }
 
+.feature_item:nth-child(4) {
+  position: relative;
+}
+
+.feature_item:nth-child(4):before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--clr-accent-2);
+}
+
 .feature_title {
   font-weight: 500;
   color: var(--clr-third);
@@ -207,4 +228,13 @@ iconify-icon {
   border: 1px solid var(--clr-primary);
   border-radius: 2rem;
   background-color: transparent;
+}
+
+.brands__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  color: var(--clr-third);
+  margin: 3.3rem 0 5rem;
 }
