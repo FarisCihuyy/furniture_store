@@ -27,7 +27,7 @@ li {
 }
 
 iconify-icon {
-  font-size: 1.3rem;
+  font-size: clamp(0.4rem, 1.6vw, 2.3rem);
   cursor: pointer;
 }
 
@@ -39,55 +39,57 @@ iconify-icon {
 /* === STYLE === */
 
 .navbar__container {
-  padding: 1.6rem 4.5rem;
+  padding: 1.6em 4.5em;
 }
 
 .navbar__top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0.7rem;
+  font-size: clamp(0.3rem, 1vw, 1.4rem);
+  padding-bottom: 0.7em;
   border-bottom: 1px solid var(--clr-accent-2);
 }
 
 .contact__container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .contact {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5em;
 }
 
 .contact > p {
-  font-size: 0.85rem;
+  font-size: clamp(0.3rem, 1vw, 1.4rem);
   color: var(--clr-primary);
 }
 
 .sosmed {
   display: flex;
-  gap: 1rem;
+  gap: 1em;
 }
 
 .navbar__bottom {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-top: 1rem;
+  font-size: clamp(0.4rem, 1.3vw, 2rem);
+  padding-top: 1em;
 }
 
 .logo {
   font-weight: 600;
-  font-size: 1.8rem;
+  font-size: clamp(0.8rem, 2.3vw, 3rem);
   color: var(--clr-primary);
 }
 
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: 2em;
   font-weight: 300;
 }
 
@@ -97,10 +99,11 @@ iconify-icon {
 
 .buttons {
   display: flex;
-  gap: 2rem;
+  gap: 2em;
 }
 
 .sign_in {
+  font-size: clamp(0.4rem, 1.1vw, 2rem);
   background-color: transparent;
   color: var(--clr-accent-1);
   border: none;
@@ -108,21 +111,22 @@ iconify-icon {
 }
 
 .sign_up {
+  font-size: clamp(0.4rem, 1.1vw, 2rem);
   background-color: var(--clr-accent-1);
-  padding: 0.7rem 1rem;
+  padding: 0.7em 1em;
   border: none;
-  border-radius: 2rem;
+  border-radius: 2em;
   color: white;
 }
 
 .hero__content {
-  padding: 1rem 2.8rem 0;
+  padding: 1em 2.8em 0;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 2em;
 }
 
 .title__section {
@@ -134,14 +138,14 @@ iconify-icon {
 
 .title {
   color: var(--clr-primary);
-  font-size: 3.8rem;
+  font-size: clamp(1rem, 5vw, 5rem);
   text-transform: capitalize;
 }
 
 .tagline {
-  font-size: 1.1rem;
+  font-size: clamp(0.4rem, 1.3vw, 2rem);
   color: var(--clr-third);
-  margin: 1.5rem 0;
+  margin: 1.5em 0;
 }
 
 .ornament {
@@ -149,18 +153,19 @@ iconify-icon {
 }
 
 .ornament img {
-  border-radius: 2.5rem;
+  border-radius: 2.5em;
   width: 100%;
 }
 
 .explore,
 .watch_video {
-  padding: 0.3rem 1rem;
-  border-radius: 2rem;
+  padding: 0.3em 1em;
+  border-radius: 2em;
 }
 
 .explore {
-  border: 1.4px solid var(--clr-primary);
+  font-size: clamp(0.4rem, 1.27vw, 2rem);
+  border: 1.2px solid var(--clr-primary);
   background-color: transparent;
   color: var(--clr-primary);
 }
@@ -168,29 +173,34 @@ iconify-icon {
 .watch_video {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.6em;
   background-color: transparent;
   border: none;
   color: var(--clr-third);
 }
 
 .watch_video iconify-icon {
-  font-size: 1.6rem;
+  font-size: clamp(0.6rem, 1.7vw, 2rem);
   border-radius: 50%;
   padding: 5px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.13);
 }
 
+.watch_video p {
+  font-size: clamp(0.4rem, 1.27vw, 2rem);
+}
+
 .features__container {
+  font-size: clamp(0.4rem, 1.27vw, 2rem);
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 3em;
   background-color: white;
   width: fit-content;
-  border-radius: 3rem;
+  border-radius: 3em;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.13);
-  padding: 1.3rem 2rem;
-  margin-top: -3.5rem;
+  padding: 1.3em 2em;
+  margin-top: clamp(-4em, -3em, 2em);
   position: relative;
   z-index: 1;
 }
@@ -202,7 +212,7 @@ iconify-icon {
 .feature_item:nth-child(4):before {
   content: "";
   position: absolute;
-  left: -1.5rem;
+  left: -1.5em;
   top: 0;
   bottom: 0;
   width: 1px;
@@ -210,31 +220,34 @@ iconify-icon {
 }
 
 .feature_title {
+  font-size: clamp(0.4rem, 1.27vw, 2rem);
   font-weight: 500;
   color: var(--clr-third);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3em;
 }
 
 .feature_description {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  font-size: 0.8rem;
+  gap: 0.5em;
+  font-size: clamp(0.3rem, 1vw, 1.4rem);
   color: var(--clr-third);
 }
 
 .feature_item .btn {
-  padding: 0.7rem 1.3rem;
+  font-size: clamp(0.4rem, 1.15vw, 2rem);
+  padding: 0.7em 1.3em;
   border: 1px solid var(--clr-primary);
-  border-radius: 2rem;
+  border-radius: 2em;
   background-color: transparent;
 }
 
 .brands__container {
+  font-size: clamp(0.6rem, 1.23vw, 2.4rem);
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 4em;
   color: var(--clr-third);
-  margin: 3.3rem 0 5rem;
+  margin: 3.3em 0 5em;
 }
