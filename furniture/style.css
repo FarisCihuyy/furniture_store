@@ -6,7 +6,7 @@
   --clr-accent-1: #f97316;
   --clr-accent-2: #dddddd;
 
-  --clr-bg-1: rgba(237, 237, 237, 0.503);
+  --clr-bg-1: #ededed80;
 }
 
 /* === Global Style === */
@@ -17,8 +17,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: inter, sans-serif;
-  color: var(--clr-primary);
 }
 
 a {
@@ -40,8 +38,14 @@ iconify-icon {
   cursor: pointer;
 }
 
-html {
+button {
+  font-family: Inter, sans-serif;
+}
+
+body {
   font-size: clamp(0.4rem, 1.3vw, 2rem); /* 16px in 1280vw */
+  font-family: Inter, sans-serif;
+  color: var(--clr-primary);
 }
 
 /* === STYLE === */
@@ -75,7 +79,6 @@ html {
 
 .contact > p {
   font-size: clamp(0.3rem, 1vw, 1.4rem);
-  color: var(--clr-primary);
 }
 
 .sosmed {
@@ -93,11 +96,11 @@ html {
 .logo {
   font-weight: 600;
   font-size: clamp(0.8rem, 2.3vw, 3rem);
-  color: var(--clr-primary);
 }
 
 .menu {
   display: flex;
+  align-items: center;
   gap: 2em;
   font-weight: 300;
 }
@@ -146,7 +149,6 @@ html {
 }
 
 .title {
-  color: var(--clr-primary);
   font-size: clamp(1rem, 5vw, 5rem);
   text-transform: capitalize;
 }
@@ -173,9 +175,8 @@ html {
 
 .explore {
   font-size: clamp(0.4rem, 1.05vw, 2rem);
-  border: 1.2px solid var(--clr-primary);
+  border: 1.4px solid var(--clr-primary);
   background-color: transparent;
-  color: var(--clr-primary);
 }
 
 .watch_video {
@@ -255,7 +256,7 @@ html {
   justify-content: center;
   align-items: center;
   gap: 4em;
-  margin: 3.3em 0;
+  margin: 3.3em 0 4.5em;
 }
 
 .brand {
@@ -288,7 +289,6 @@ html {
 .category {
   position: relative;
   z-index: 1;
-  color: var(--clr-primary);
   text-align: center;
 }
 
@@ -299,6 +299,11 @@ html {
   z-index: 0;
   width: 10em;
   height: 10em;
+}
+
+.category__card:nth-child(2) .category_image {
+  width: 8.5em;
+  height: 8.5em;
 }
 
 .category_image img {
@@ -317,4 +322,44 @@ html {
   border: none;
   padding: 0.5em 1em;
   border-radius: 1em;
+}
+
+/* === Product Section === */
+
+.product__section {
+  padding: 1em 2.8em 0;
+  height: 100vh;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.check_product h5 {
+  color: var(--clr-accent-1);
+  background-color: var(--clr-bg-1);
+  display: inline-block;
+  padding: 0.6em 1.5em;
+  border-radius: 2em;
+  margin-bottom: 1em;
+}
+
+.heading_title_container > h3 {
+  font-size: clamp(0.8rem, 1.8vw, 2.5rem);
+}
+
+.menu_list .menu li {
+  font-size: clamp(0.4rem, 1.1vw, 2rem);
+  color: var(--clr-third);
+}
+
+.menu_list .menu li.active {
+  border: 1.4px solid var(--clr-primary);
+  padding: 0.7em 1.5em;
+  border-radius: 2em;
+  color: var(--clr-primary);
+  font-weight: 500;
+  font-size: clamp(0.4rem, 0.9vw, 2rem);
 }
