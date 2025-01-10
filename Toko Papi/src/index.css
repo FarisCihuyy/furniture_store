@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "BagelFatOne";
+    src: url("assets/fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf");
+  }
+}
+
+@layer utilities {
+  .bg-gradient-image {
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.75) 65%, transparent),
+      url("/public/images/hero.jpg");
+    background-size: cover;
+    background-position: right;
+  }
+}
